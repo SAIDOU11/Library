@@ -1,5 +1,11 @@
+import Badge from './components/Badge/Badge.jsx';
+
 const App = () => {
-  return <h1>APP</h1>;
+  return (
+    <>
+      <Badge color="blue" pill="pill" square="square" />
+    </>
+  );
 };
 
 export default App;
