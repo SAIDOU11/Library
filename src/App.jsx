@@ -1,4 +1,4 @@
-import Badge from './components/Badge/Badge.jsx';
+import Badge from './components/Badges/Badge.jsx';
 
 const App = () => {
   return (

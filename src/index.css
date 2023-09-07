@@ -6,8 +6,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #c6c8c9;
+  background-color: #e5e8e9;
+  font-family: Inter;
 }
+
+/* Badge Component */
 
 .form-square,
 .form-pill {
@@ -28,11 +31,11 @@ body {
   border-radius: 0.8em;
 }
 
-p {
+.form-pill p,
+.form-square p {
   padding: 0.15em 0.8em;
   font-weight: 600;
   font-size: 0.9rem;
-  font-family: Inter;
 }
 
 .green {
@@ -73,4 +76,51 @@ p {
 .pink {
   background-color: #fce7f3;
   color: #9d174d;
+}
+
+/* Badge Component */
+
+.multiline,
+.singleline {
+  border: none;
+  border-radius: 0.3em;
+  width: 896px;
+}
+
+.multiline {
+  height: 100px;
+}
+
+.multiline p {
+  font-size: 0.8rem;
+}
+
+.singleline {
+  height: 52px;
+}
+
+.success-title {
+  background-color: #ecfdf5;
+  color: #065f46;
+}
+.success-title p {
+  color: #047857;
+}
+
+.warning-title,
+.error-title {
+  background-color: #fffbeb;
+  color: #92400e;
+}
+.warning-title p,
+.error-title p {
+  color: #b45309;
+}
+
+.neutral-title {
+  background-color: #eff6ff;
+  color: #1e40af;
+}
+.neutral-title p {
+  color: #1c51b9;
 }
