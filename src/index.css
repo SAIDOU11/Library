@@ -85,6 +85,10 @@ body {
   border: none;
   border-radius: 0.3em;
   width: 896px;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  margin: 1em;
 }
 
 .multiline {
@@ -97,6 +101,16 @@ body {
 
 .singleline {
   height: 52px;
+}
+
+.icon {
+  height: 1.3em;
+  width: 1.3em;
+  margin-right: 0.5em;
+}
+
+.success-icon {
+  color: #34d399;
 }
 
 .success-title {
