@@ -1,11 +1,21 @@
 import Badge from './components/Badges/Badge.jsx';
-import Banner from './components/Banners/Banner.jsx';
+import Banner from './components/Banners/index.jsx';
+import useTruthyOrFalsy from './hooks/useTruthyOrFalsy.jsx';
 
 const App = () => {
+  const [line, setLine] = useTruthyOrFalsy(true);
   return (
     <>
       {/* <Badge color="blue" pill="pill" square="square" /> */}
-      <Banner icon="icon" title="title" singleline="singleline" />
+      {line ? (
+        <Banner.Title
+          icon="icon"
+          title="title"
+          singleline="singleline"
+        ></Banner.Title>
+      ) : (
+        <Banner.TitleText></Banner.TitleText>
+      )}
     </>
   );
 };

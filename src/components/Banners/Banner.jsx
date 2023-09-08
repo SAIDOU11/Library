@@ -1,25 +1,18 @@
-import { useState } from 'react';
-import { AiFillCheckCircle } from 'react-icons/ai';
 import classNames from 'classnames';
+import { createContext } from 'react';
+import useTruthyOrFalsy from '../../hooks/useTruthyOrFalsy.jsx';
 
-const Banner = ({ icon, title, singleline }) => {
-  const [line, setLine] = useState(false);
+const BannerContext = createContext();
 
-  const successIcon = `success-${icon}`;
-  const singleLine = ` ${singleline}`;
-  console.log(typeof singleLine);
-  const successTitle = `success-${title}`;
-
+const Banner = ({ children, singleline }) => {
+  const [line, setLine] = useTruthyOrFalsy(false);
   const successClasses = classNames(singleLine, successTitle);
-  const iconColor = classNames(icon, successIcon);
 
   return (
-    <>
-      <div className={successClasses}>
-        <AiFillCheckCircle className={iconColor} /> Congratulations
-      </div>
-    </>
+    <BannerContext.Provider value={{ line }}>
+      <div className={successClasses}>{children}</div>
+    </BannerContext.Provider>
   );
 };
 
-export default Banner;
+export { Banner, BannerContext };
