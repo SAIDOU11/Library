@@ -1,7 +1,7 @@
 import { AiFillCheckCircle } from 'react-icons/ai';
 import classNames from 'classnames';
 
-const BannerTitleText = ({ icon, title, multiline }) => {
+const BannerSuccessTitleText = ({ icon, title, multiline }) => {
   const successTitle = `success-${title}`;
   const successIcon = `success-${icon}`;
   const multilineTitle = `${multiline}`;
@@ -22,4 +22,4 @@ const BannerTitleText = ({ icon, title, multiline }) => {
   );
 };
 
-export default BannerTitleText;
+export default BannerSuccessTitleText;

@@ -1,7 +1,7 @@
 import { AiFillCheckCircle } from 'react-icons/ai';
 import classNames from 'classnames';
 
-const BannerTitle = ({ icon, singleline, title }) => {
+const BannerSuccessTitle = ({ icon, singleline, title }) => {
   const successTitle = `success-${title}`;
   const successIcon = `success-${icon}`;
   const singlelineTitle = `${singleline}`;
@@ -11,9 +11,11 @@ const BannerTitle = ({ icon, singleline, title }) => {
 
   return (
     <div className={backgroungTitle}>
-      <AiFillCheckCircle className={allClassesIcon} /> Congratulations
+      <h4>
+        <AiFillCheckCircle className={allClassesIcon} /> Congratulations
+      </h4>
     </div>
   );
 };
 
-export default BannerTitle;
+export default BannerSuccessTitle;

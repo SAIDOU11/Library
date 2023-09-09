@@ -1,5 +1,4 @@
 // import Badge from './components/Badges/Badge.jsx';
-import BannerTitleText from './components/Banners/BannerTitleText.jsx';
 import Banner from './components/Banners/index.jsx';
 import useBoolean from './hooks/useBoolean.jsx';
 
@@ -8,18 +7,19 @@ const App = () => {
   return (
     <>
       {/* <Badge color="blue" pill="pill" square="square" /> */}
+
       {value ? (
-        <Banner.Title
+        <Banner.NeutralTitle
           title="title"
           singleline="singleline"
           icon="icon"
-        ></Banner.Title>
+        ></Banner.NeutralTitle>
       ) : (
-        <Banner.TitleText
+        <Banner.NeutralTitleText
           title="title"
           multiline="multiline"
           icon="icon"
-        ></Banner.TitleText>
+        ></Banner.NeutralTitleText>
       )}
     </>
   );
