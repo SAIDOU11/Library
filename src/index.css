@@ -86,13 +86,20 @@ body {
   border-radius: 0.3em;
   width: 896px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 1em;
   margin: 1em;
 }
 
 .multiline {
   height: 100px;
+}
+
+h4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 .multiline p {
@@ -119,6 +126,7 @@ body {
 }
 .success-title p {
   color: #047857;
+  margin-left: 2.2em;
 }
 
 .warning-title,
